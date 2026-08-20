@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="The personal portfolio of product manager Emily Parsons."
+      content="The personal portfolio of Emily Parsons."
     />
     <title>Emily Parsons</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <p class="eyebrow">empars.com</p>
-      <h1>Hello, world.</h1>
-      <p class="intro">
-        I’m Emily—a product manager learning to build with AI. My work,
-        personality, and résumé will live here soon.
-      </p>
+    <main class="hero">
+      <picture>
+        <source
+          media="(max-aspect-ratio: 4 / 5)"
+          srcset="assets/homepage-hero-mobile.webp"
+        />
+        <img
+          class="hero__art"
+          src="assets/homepage-hero.webp"
+          alt="A paper-cut illustration of Emily Parsons’s name in clouds above the San Francisco skyline."
+        />
+      </picture>
+      <div class="sr-only">
+        <h1>Emily Parsons</h1>
+      </div>
     </main>
   </body>
 </html>
