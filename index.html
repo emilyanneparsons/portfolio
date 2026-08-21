@@ -12,17 +12,24 @@
   </head>
   <body>
     <main class="hero">
-      <picture>
+      <picture class="hero__scene">
         <source
           media="(max-aspect-ratio: 4 / 5)"
-          srcset="assets/homepage-hero-mobile.webp"
+          srcset="assets/homepage-background-mobile.webp"
         />
         <img
-          class="hero__art"
-          src="assets/homepage-hero.webp"
-          alt="A paper-cut illustration of Emily Parsons’s name in clouds above the San Francisco skyline."
+          class="hero__background"
+          src="assets/homepage-background-desktop-v2.webp"
+          alt="A colorful paper-cut illustration of the San Francisco skyline beneath a bright blue sky."
         />
       </picture>
+      <div class="hero__title-stage" aria-hidden="true">
+        <img
+          class="hero__title"
+          src="assets/homepage-title-clouds-layer.webp"
+          alt=""
+        />
+      </div>
       <div class="sr-only">
         <h1>Emily Parsons</h1>
       </div>
