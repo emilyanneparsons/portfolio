@@ -8,10 +8,11 @@
       content="The personal portfolio of Emily Parsons."
     />
     <title>Emily Parsons</title>
-    <link rel="stylesheet" href="styles.css?v=20260821-4" />
+    <link rel="stylesheet" href="styles.css?v=20260822-18" />
   </head>
   <body>
-    <main class="hero">
+    <div class="scroll-story">
+      <main class="hero">
       <picture class="hero__scene">
         <source
           media="(max-aspect-ratio: 4 / 5)"
@@ -68,6 +69,49 @@
       <div class="sr-only">
         <h1>Emily Parsons</h1>
       </div>
-    </main>
+      <div class="hero__fog-engulf" aria-hidden="true">
+        <img
+          class="hero__fog-engulf-art"
+          src="assets/fog-engulf-v2-clean-tall.png"
+          alt=""
+        />
+      </div>
+      <div class="hero__fog-pieces" aria-hidden="true">
+        <img class="hero__fog-piece hero__fog-piece--1" src="assets/fog-pieces/fog-piece-1-tall.png" alt="" />
+        <img class="hero__fog-piece hero__fog-piece--2" src="assets/fog-pieces/fog-piece-1-tall.png" alt="" />
+        <img class="hero__fog-piece hero__fog-piece--3" src="assets/fog-pieces/fog-piece-1-tall.png" alt="" />
+        <img class="hero__fog-piece hero__fog-piece--4" src="assets/fog-pieces/fog-piece-1-tall.png" alt="" />
+      </div>
+      </main>
+    </div>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <h2 id="about-title" class="sr-only">Emily Parsons interactive typography</h2>
+        <iframe
+          class="about__embed"
+          src="assets/trailing-text.html?v=20260822-1"
+          title="Interactive trailing text experiment"
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
+        <form class="about__search" aria-label="Ask Emily" novalidate>
+          <label class="sr-only" for="about-query">Ask Emily a question</label>
+          <input
+            id="about-query"
+            name="query"
+            type="text"
+            autocomplete="off"
+            spellcheck="true"
+            placeholder=""
+          />
+          <button type="submit" aria-label="Ask" hidden>
+            <span aria-hidden="true">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js?v=20260822-8"></script>
   </body>
 </html>
